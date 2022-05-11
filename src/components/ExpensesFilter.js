@@ -20,15 +20,18 @@ const array = [
 
 const ExpensesFilter = ({ selected, allExpenses, filteredExpenses }) => {
 	const [exp, setExp] = React.useState([]);
+
 	React.useEffect(() => {
 		setExp(allExpenses);
 	}, [allExpenses]);
+
 	const filterItem = year => {
 		let result = allExpenses.filter(item => {
-			// expense.date?.getFullYear().toString() === selected;
 			let expense = item.newDate.toString().includes(year);
+
 			return expense;
 		});
+
 		setExp(result);
 	};
 
@@ -37,11 +40,7 @@ const ExpensesFilter = ({ selected, allExpenses, filteredExpenses }) => {
 	};
 
 	const deleteItem = id => {
-		setExp(prevSate => prevSate.filter(item => item.id !== id)); //v1
-		// setExp(prevState => {
-		// 	const idx = prevState.findIndex(item => item.id === id);
-		// 	return [...prevState.slice(0, idx), ...prevState.slice(idx + 1)];
-		// });//v2
+		setExp(prevSate => prevSate.filter(item => item.id !== id));
 	};
 
 	return (
