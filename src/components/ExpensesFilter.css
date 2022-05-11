@@ -1,0 +1,65 @@
+.Card-filter {
+	color: white;
+	padding: 1px 1rem;
+	background-color: #2a2a2a;
+	width: 810px;
+	border-radius: 6px;
+	margin: 0 auto;
+}
+.expenses-filter {
+	padding-bottom: 2px;
+}
+
+.expenses-filter__control {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	margin: 1rem 0;
+}
+
+.expenses-filter label {
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.expenses-filter select {
+	font: inherit;
+	padding: 0.5rem 3rem;
+	font-weight: bold;
+	border-radius: 6px;
+}
+
+.chart-wrap {
+	height: 235px;
+	background-color: blueviolet;
+	border-radius: 6px;
+	margin-bottom: 32px;
+}
+
+.chart-item {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.chart-item div:nth-of-type(3) {
+	background: #193fd5;
+}
+
+.chart-item div:nth-of-type(6) {
+	background: #193fd5;
+}
+
+.chart-item div {
+	height: 180px;
+	width: 15px;
+	background: #b1afd9;
+	border-radius: 10px;
+}
+
+.chart-item-label {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+}
